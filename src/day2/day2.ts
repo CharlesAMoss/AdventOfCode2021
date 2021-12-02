@@ -11,19 +11,18 @@ export const partone = () => {
       
         switch(command) {
             case 'forward':
-                x = x + <number> +value;
+                x += +value
                 break;
             case 'up':
-                y = y - <number> +value;
+                y -= +value
                 break;
             case 'down':
-                y = y + <number> +value;
+                y += +value
                 break;
         }
-
     })
 
-    return x * y
+    return x * y;
 }
 
 export const parttwo = () => {
