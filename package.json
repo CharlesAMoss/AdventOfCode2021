@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node index.ts",
-    "build": "tsc"
+    "start": "ts-node ./src/index.ts",
+    "build": "tsc",
+    "run": "node ./dist/index.js"
   },
   "author": "@charlesmoss",
   "license": "ISC",

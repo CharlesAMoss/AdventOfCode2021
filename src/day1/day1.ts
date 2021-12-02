@@ -12,7 +12,6 @@ export const partone = () => {
         } 
     }
     
-    
     return count
 }
 
@@ -20,7 +19,7 @@ export const parttwo = () => {
     
     let count: number = 0;
     for(let i = 2; i < list.length ; i++) {
-        if ((list[i] + list[i-1] + list[i-2]) < (list[i+1] + list[i] + list[i-1])) {
+        if (list[i] + list[i-1] + list[i-2] < list[i+1] + list[i] + list[i-1]) {
             count++
         }  
     }
