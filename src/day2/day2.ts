@@ -44,6 +44,6 @@ export const parttwo = () => {
                 break;
         }
     })
-
+    
     return x * y;
 }
