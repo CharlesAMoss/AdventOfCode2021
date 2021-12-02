@@ -26,8 +26,24 @@ export const partone = () => {
 }
 
 export const parttwo = () => {
-    
- 
-    
-    return 'hey'
+    let x: number = 0, y: number = 0, aim: number = 0;
+   
+    list.map(l => { 
+        let [command, value] = l.split(' ');
+      
+        switch(command) {
+            case 'forward':
+                x += +value
+                y += aim * +value 
+                break;
+            case 'up':
+                aim -= +value
+                break;
+            case 'down':
+                aim += +value
+                break;
+        }
+    })
+
+    return x * y;
 }
